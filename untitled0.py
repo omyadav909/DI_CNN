@@ -51,9 +51,8 @@ model = models.Sequential([
 
     layers.Flatten(),
     layers.Dense(512, activation='relu'),
-    layers.Dropout(0.5), # Dropout prevents overfitting
-    layers.Dense(1, activation='sigmoid') # Binary output (0 = cat, 1 = dog)
-])
+    layers.Dropout(0.5), 
+    layers.Dense(1, activation='sigmoid') 
 
 
 model.compile(
